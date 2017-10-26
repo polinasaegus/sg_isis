@@ -1,0 +1,14 @@
+.Profile{
+  &__wrapper{
+    padding: 10px 20px;
+  }
+  &__name{
+    font-size: 18px; 
+    color: #A9AFB6;
+    font-weight: bold;
+  }
+  &__administration{
+    font-size: 14px; 
+    color: #A9AFB6;
+  }
+}

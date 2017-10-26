@@ -1,0 +1,42 @@
+.Notification {
+  background-color: #FBF4E6;
+  // position: absolute;
+  color: #E49008;
+  // bottom: 0;
+  // left: 0;
+  // width: 100%;
+  &__icon{
+    background-image: url("./images/notification-icon.svg"); 
+    background-position :center center; 
+    background-repeat: no-repeat; 
+    background-size: 36px 36px; 
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: text-bottom;
+    @media (min-width:768px) and (max-width:1024px){
+      margin-left: 10px;
+      vertical-align: baseline;
+      margin-bottom: 5px;
+    }
+    &--oneline{
+      vertical-align: middle;
+    }
+  }
+  &__text{
+    display: inline-block;
+    width: 260px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    @media (min-width:768px) and (max-width:1024px){
+      margin-left: 10px;
+      width: 140px;
+    }
+    &--oneline{
+      width: 90%;
+    }
+  }
+
+}

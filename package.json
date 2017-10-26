@@ -1,0 +1,22 @@
+{
+  "name": "project-name",
+  "description": "Project description",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "postcss-cssnext": "^2.9.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}

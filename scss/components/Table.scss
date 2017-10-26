@@ -1,0 +1,32 @@
+.Table {
+border-collapse: collapse;
+width: 100%;
+font-weight: 300;
+  td,th{
+    padding: 10px 5px 10px 0;
+  }
+  th{
+    font-size: 12px;
+    color: #9F9F9F;
+  }
+  td{
+    line-height: 1.5; 
+    vertical-align: top;
+  }
+  @media (min-width:768px) and (max-width:1024px){
+    .br-mdlg{
+      display: none;
+    }
+  }
+ 
+  &__col-trigramme{
+    width: 15%;
+  }
+  &__col-titre{
+    width: 50%;    
+  }
+  &__col-person{
+    width: 35%
+  }
+  
+}

@@ -1,0 +1,26 @@
+.Header {
+  // *{
+  //   padding: 0;
+  // }
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  
+  &__logo{
+    padding: 0;
+  }
+  &__profile{
+    text-align: right; 
+    margin-top: 5px;
+    padding: 0;
+  }
+  &__name{
+    font-size: 18px; 
+    color: #A9AFB6;
+    font-weight: bold;
+  }
+  &__administration{
+    font-size: 14px; 
+    color: #A9AFB6;
+  }
+}
