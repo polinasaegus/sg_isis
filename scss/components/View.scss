@@ -1,0 +1,23 @@
+.View {
+  &__icon{
+    background-color: #D8D8D8;
+    min-width: 30px;
+    min-height: 30px;
+    content: '';
+    display: inline-block;
+    &:hover{
+      background-color: #3876CF;    
+      cursor: pointer;    
+    }
+    &--list{
+      background-color: #3876CF;          
+      -webkit-mask: url("./images/view-line.svg") no-repeat 50% 50%;
+      mask: url("./images/view-line.svg") no-repeat 50% 50%;
+    }
+    &--carre{
+      -webkit-mask: url("./images/view-carre.svg") no-repeat 50% 50%;
+      mask: url("./images/view-carre.svg") no-repeat 50% 50%;
+    }
+  }
+ 
+}
