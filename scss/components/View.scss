@@ -1,6 +1,5 @@
 .View {
   &__icon{
-    background-color: #D8D8D8;
     min-width: 30px;
     min-height: 30px;
     content: '';
@@ -9,8 +8,13 @@
       background-color: #3876CF;    
       cursor: pointer;    
     }
-    &--list{
+    &--active{
       background-color: #3876CF;          
+    }
+    &--disabled{
+      background-color: #D8D8D8;      
+    }
+    &--list{
       -webkit-mask: url("./images/view-line.svg") no-repeat 50% 50%;
       mask: url("./images/view-line.svg") no-repeat 50% 50%;
     }

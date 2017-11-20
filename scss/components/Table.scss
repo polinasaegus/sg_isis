@@ -1,12 +1,12 @@
 .Table {
 border-collapse: collapse;
 width: 100%;
-font-weight: 300;
+font-weight: 400;
   td,th{
     padding: 10px 5px 10px 0;
   }
   th{
-    font-size: 12px;
+    font-size: 16px;
     color: #9F9F9F;
   }
   td{
@@ -21,6 +21,7 @@ font-weight: 300;
  
   &__col-trigramme{
     width: 15%;
+    font-weight: bold;
   }
   &__col-titre{
     width: 50%;    

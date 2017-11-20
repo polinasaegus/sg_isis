@@ -11,6 +11,23 @@
       transition: 0.2s ease-in-out;     
     }       
   }
+  &__link{
+    text-decoration: none; 
+    color: inherit;
+    height: 100%;
+    display: block;
+    outline: none;
+    &:hover{
+      outline: none;
+    }
+    &:active{
+      outline: none;
+    }
+    &:visited{
+      outline: none;
+    }
+
+  }
   &__notification{
     position: absolute;
     bottom: 0;
@@ -29,21 +46,29 @@
     border-radius: 3px;
     border-radius: 2px;
     transition: 0.2s ease-in-out;
-    height: 240px;
+    height: 120px;
     @media (min-width:768px) and (max-width:1024px){
-      height: 230px;
+      height: 140px;
     }
   }
   &__title{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     position: absolute;
     top:40%;
     left: 50%;
-    width: 70%;        
-    transform: translate(-50%, -50%);
+    width: 80%;        
+    transform: translate(-50%, -50%); 
+
+    &--repositioned{
+      top:23%; 
+      @media (min-width:768px) and (max-width:1024px){
+        top: 16%;
+      }     
+    }
     @media (min-width:768px) and (max-width:1024px){
       font-size: 14px;
+      width:90%;
     }
   }
 }

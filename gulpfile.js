@@ -7,7 +7,7 @@ const Concat = require('gulp-concat');
 const Uglify = require('gulp-uglify');
 const BrowserSync = require('browser-sync').create();
 
-Gulp.task('sass', () => Gulp.src(['./scss/*.scss', './scss/**/*.scss'])
+Gulp.task('sass', () => Gulp.src(['./scss/main.scss'])
   .pipe(Sass().on('error', Sass.logError))
   .pipe(PostCSS([ CSSNext() ]))
   .pipe(Concat('style.css'))
@@ -15,6 +15,16 @@ Gulp.task('sass', () => Gulp.src(['./scss/*.scss', './scss/**/*.scss'])
   .pipe(Gulp.dest('./public'))
   .pipe(BrowserSync.stream())
 );
+
+Gulp.task('sass-admin', () => Gulp.src(['./scss/admin.scss'])
+.pipe(Sass().on('error', Sass.logError))
+.pipe(PostCSS([ CSSNext() ]))
+.pipe(Concat('admin.css'))
+.pipe(CleanCSS({ compatibility: 'ie10' }))
+.pipe(Gulp.dest('./public'))
+.pipe(BrowserSync.stream())
+);
+
 
 Gulp.task('js', () => Gulp.src([
   // Example to add dependencies from npm:
@@ -33,8 +43,8 @@ Gulp.task('browser-sync', () => BrowserSync.init({
 
 Gulp.task('noop', () => undefined);
 
-Gulp.task('default', ['js', 'sass', 'browser-sync'], () => {
-  Gulp.watch('./scss/**/*.scss', ['sass']);
+Gulp.task('default', ['js', 'sass', 'sass-admin', 'browser-sync'], () => {
+  Gulp.watch('./scss/**/*.scss', ['sass', 'sass-admin']);
   Gulp.watch('./public/**/*.html', ['noop']).on('change', BrowserSync.reload);
   Gulp.watch('./js/**/*.js', ['js']);
 });

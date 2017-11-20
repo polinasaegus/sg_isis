@@ -1,0 +1,35 @@
+.Module__notification{
+  top: 0; 
+  &.Notification{
+    background-color: transparent;
+    color: transparent;
+    .Notification__icon{
+      background-size: 16px 16px;
+      margin-top: 4px; 
+    }
+    .Notification__text{
+      display: none;
+    }
+  }
+
+}
+.Module{
+&__container{
+    height: 50px !important;
+  }
+  &__title{
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 43% !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 70%;
+    font-size: 14px;
+    @media (min-width:768px) and (max-width:1024px){
+      width: 60%;  
+      font-size: 12px;
+    }  
+  }
+}
+

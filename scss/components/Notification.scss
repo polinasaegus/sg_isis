@@ -9,12 +9,12 @@
     background-image: url("./images/notification-icon.svg"); 
     background-position :center center; 
     background-repeat: no-repeat; 
-    background-size: 36px 36px; 
+    background-size: 26px 26px; 
     width: 36px;
     height: 36px;
     display: inline-block;
     margin-left: 20px;
-    vertical-align: text-bottom;
+    vertical-align: middle;
     @media (min-width:768px) and (max-width:1024px){
       margin-left: 10px;
       vertical-align: baseline;
@@ -26,9 +26,9 @@
   }
   &__text{
     display: inline-block;
-    width: 260px;
+    width: 280px;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     @media (min-width:768px) and (max-width:1024px){
       margin-left: 10px;

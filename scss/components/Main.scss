@@ -1,7 +1,7 @@
 .Main{
   background-color: #F0F1F4;
   background-image: linear-gradient(-180deg, rgba(255,255,255,0.01) 0%, rgba(25,78,171,0.02) 100%);
-  padding-top: 50px; 
+  //padding-top: 50px; 
   padding-bottom: 70px;
   &__icons{
     margin-right: 20px;
@@ -10,10 +10,16 @@
     padding: 0;
     text-align: right;
     margin: 40px 0;
+    @media (min-width:768px) and (max-width:1024px){
+      margin: 20px 0;
+    }  
   }
   &__title{
     padding: 0;
-    margin: 40px 0;
+    margin: 40px 0 40px 0;
+    @media (min-width:768px) and (max-width:1024px){
+      margin: 20px 0;
+    }  
   }
   &__line{
     //margin-top: 15px; 
@@ -23,4 +29,5 @@
   &__module:first-child{
     margin-left: -10px;
   }
+  
 }
