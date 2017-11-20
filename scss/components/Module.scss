@@ -1,6 +1,6 @@
 .Module {
   padding-left: 0px;
-  padding-right: 0px;
+  padding-right: 0px;  
 
   &:hover{
     .Module__container{
@@ -40,31 +40,31 @@
     // padding-bottom: 80px;
     position: relative;
     margin: 0 10px 20px 10px;
-    border-top: 10px solid #FFFFFF;
+    border-top: 7px solid #FFFFFF;
     background: #FFFFFF;
     box-shadow: 0 0 20px 0 rgba(2,32,121,0.10);
     border-radius: 3px;
     border-radius: 2px;
     transition: 0.2s ease-in-out;
     height: 120px;
-    @media (min-width:768px) and (max-width:1024px){
-      height: 140px;
-    }
+    // @media (min-width:768px) and (max-width:1024px){
+    //   height: 140px;
+    // }
   }
   &__title{
     text-align: center;
     font-size: 16px;
     position: absolute;
-    top:40%;
+    top:36%;
     left: 50%;
-    width: 80%;        
+    width: 91%;   
     transform: translate(-50%, -50%); 
 
-    &--repositioned{
-      top:23%; 
-      @media (min-width:768px) and (max-width:1024px){
-        top: 16%;
-      }     
+    &--repositionned{
+      top:17%; 
+      // @media (min-width:768px) and (max-width:1024px){
+      //   top: 16%;
+      // }     
     }
     @media (min-width:768px) and (max-width:1024px){
       font-size: 14px;

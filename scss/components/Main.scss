@@ -21,13 +21,21 @@
       margin: 20px 0;
     }  
   }
-  &__line{
-    //margin-top: 15px; 
-    //margin-bottom: 15px;
-  }
 
-  &__module:first-child{
-    margin-left: -10px;
-  }
-  
+  &__module{
+    &:first-child{
+      margin-left: -10px;
+    }
+    @media (min-width:768px) and (max-width:1199px){
+      &:nth-child(3n+1){
+        margin-left: -10px;
+      }
+    }
+    @media (min-width:1200px){
+      &:nth-child(4n+1){
+        margin-left: -10px;
+      }
+    }
+    
+  }  
 }

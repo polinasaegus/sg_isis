@@ -13,12 +13,11 @@
     width: 36px;
     height: 36px;
     display: inline-block;
-    margin-left: 20px;
-    vertical-align: middle;
+    margin:10px 10px 5px 20px;
+    vertical-align: bottom;
     @media (min-width:768px) and (max-width:1024px){
       margin-left: 10px;
-      vertical-align: baseline;
-      margin-bottom: 5px;
+      margin-bottom: 7px;
     }
     &--oneline{
       vertical-align: middle;
@@ -26,13 +25,13 @@
   }
   &__text{
     display: inline-block;
-    width: 280px;
+    max-width: 68%;
     margin-left: 10px;
     font-size: 12px;
     font-weight: 600;
     @media (min-width:768px) and (max-width:1024px){
       margin-left: 10px;
-      width: 140px;
+      //width: 140px;
     }
     &--oneline{
       width: 90%;
